@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria Eduarda - Meu Site Pessoal</title>
+  <style>
+   
+.favoritos-grid .item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.favoritos-grid .item img:hover {
+  transform: scale(1.1);
+  filter: brightness(0.9); 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(180deg, #ffe5e5 0%, #f5b5b5 50%, #ff8c8c 100%);
+  background-attachment: fixed; /* fixa o fundo ao rolar a página */
+}
+  header {
+      background-color: #8a1111;
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .foto-perfil {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+
+    .texto-sobre {
+  background-color: #835454; 
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+    .sobre-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .sobre-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .favoritos-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .favoritos-grid .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 150px;
+    }
+
+    .favoritos-grid .item img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    iframe {
+      margin: 10px;
+    }
+
+    footer {
+      background-color: #8a1111;
+      color: white;
+      padding: 20px;
+      border-radius: 20px;
+      display: flex;
+    justify-content: center;
+     align-items: center;
+    }
+
+    a {
+      color: #8a1111;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    .favoritos-lado-a-lado {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap; 
+  margin-top: 20px;
+}
+
+.bloco-favorito {
+  background-color: #ffecec;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.links-contato-lado-a-lado {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .bloco-links,
+    .bloco-contato {
+      background-color: #ffecec;
+      padding: 20px;
+      border-radius: 15px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h3 {
+  color: #8a1111; 
+}
+table tr {
+  font-weight: bold;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-container">
+        <img src="IMG_2071.JPG" alt="Minha Foto" class="foto-perfil">
+        <h1>Maria Eduarda - Site Pessoal</h1>
+      </div>
+    </header>
+
+    <section id="sobre">
+      <div class="sobre-container">
+        <img src="IMG_2071.JPG" alt="Minha Foto">
+        <div class="texto-sobre">
+          <p>
+            Eu sou a Maria Eduarda Lopes, tenho 17 anos e moro em Perobal desde que me entendo por gente. 
+            Amo sair pra comer, ver um bom filme ou maratonar séries. Também curto ir pra academia
+            e gosto de tatuagens. 
+          </p>
+        </div>
+      </div>
+    </section>
+    
+
+    <div class="favoritos-lado-a-lado">
+
+      <div class="bloco-favorito">
+        <h3>Comidas Favoritas</h3>
+        <div class="favoritos-grid">
+          <div class="item">
+            <img src="strong.jfif" alt="Strogonoff">
+            <p>Strogonoff</p>
+          </div>
+          <div class="item">
+            <img src="lasanha.jfif" alt="Lasanha">
+            <p>Lasanha</p>
+          </div>
+          <div class="item">
+            <img src="download (2).jpg" alt="Coxinha">
+            <p>Coxinha</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="bloco-favorito">
+        <h3>Doces Favoritos</h3>
+        <div class="favoritos-grid">
+          <div class="item">
+            <img src="brigadeiro.jfif" alt="Brigadeiro">
+            <p>Brigadeiro</p>
+          </div>
+          <div class="item">
+            <img src="chocolate.jfif" alt="Chocolate Branco">
+            <p>Barra de Chocolate Branco</p>
+          </div>
+          <div class="item">
+            <img src="sorvete.jfif" alt="Sorvete">
+            <p>Sorvete</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="bloco-favorito">
+        <h3>Livros Favoritos</h3>
+        <div class="favoritos-grid">
+          <div class="item">
+            <img src="livro verity.jfif" alt="Verity">
+            <p>Verity</p>
+          </div>
+          <div class="item">
+            <img src="livro rainha vermelha.jfif" alt="Rainha Vermelha">
+            <p>A Saga da Rainha Vermelha</p>
+          </div>
+          <div class="item">
+            <img src="livro um de nos.jfif" alt="Um de nos esta mentindo">
+            <p>Um de nós esta mentindo</p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    
+
+    
+<div class="favoritos-lado-a-lado">
+  <div class="bloco-favorito">
+    <h3><b>Esportes Favoritos</b></h3>
+    <ul>
+      <li>Futebol mas não pratico, apenas acompanho meu time.</li>
+    </ul>
+  </div>
+  <div class="bloco-favorito">
+    <h3>Séries/Filmes Favoritos</h3>
+    <ul>
+      <li>Teen Wolf</li>
+      <li>Lucifer</li>
+      <li>Zootopia</li>
+      <li>Ratatouille</li>
+      <li>Moana</li>
+    </ul>
+  </div>
+</div>
+
+<div class="links-contato-lado-a-lado">
+
+  <div class="bloco-links">
+    <h3>Links Interessantes de Tecnologia</h3>
+    <ul>
+      <li><a href="https://www.techtudo.com.br/" target="_blank">TechTudo</a></li>
+      <li><a href="https://www.tecmundo.com.br/" target="_blank">TecMundo</a></li>
+      <li><a href="https://canaltech.com.br/" target="_blank">CanalTech</a></li>
+    </ul>
+  </div>
+
+  <div class="bloco-contato">
+    <h3>Contatos</h3>
+    <p>Telefone: 44984218684</p>
+    <p>E-MAIL: <strong>dudalopes463@gmail.com</strong></p>
+    <ul>
+      <li><a href="https://www.instagram.com/duda.lope.s" target="_blank">Instagram</a></li>
+    </ul>
+  </div>
+
+</div>
+
+
+<table>
+  <caption style="caption-side: top; font-weight: bold; font-size: 1.2em; margin-bottom: 10px;">
+    <h3>Horários:</h3>
+  </caption>
+      <table>
+        <tr>
+          <th>Horário</th>
+          <th>Segunda</th>
+          <th>Terça</th>
+          <th>Quarta</th>
+          <th>Quinta</th>
+          <th>Sexta</th>
+        </tr>
+        <tr>
+          <td>08:50</td>
+          <td>Matematica</td>
+          <td>Fisica</td>
+          <td>Filosofia</td>
+          <td>Ed.Fisica</td>
+          <td>Rede de Computador</td>
+        </tr>
+        <tr>
+          <td>09:40</td>
+          <td>Matematica</td>
+          <td>Sociologia</td>
+          <td>Filosofia</td>
+          <td>Ed.Fisica</td>
+          <td>Rede de Computador</td>
+        </tr>
+        <tr>
+          <td>10:45</td>
+          <td>Portugues</td>
+          <td>Matematica</td>
+          <td>Geografia</td>
+          <td>Ling.Programação</td>
+          <td>Tec Web</td>
+        </tr>
+        <tr>
+          <td>11:35</td>
+          <td>Portugues</td>
+          <td>Ingles</td>
+          <td>Geografia</td>
+          <td>Ling.Programação</td>
+          <td>Tec web</td>
+        </tr>
+        <tr>
+          <td>12:25</td>
+          <td>Geografia</td>
+          <td>Ingles</td>
+          <td></td>
+          <td>Ling.Programação</td>
+          <td>Tec Web</td>
+        </tr>
+      </table>
+      
+
+     
+          <div style="text-align: center; margin-top: 40px;">
+          <h3>Videos Favoritos</h3>
+        </caption>
+      <div>
+        <iframe width="300" height="170" src="https://www.youtube.com/embed/KUt4-UlUzOs" title="Quem é o Médico - Aqueles Caras" allowfullscreen></iframe>
+        <iframe width="300" height="170" src="https://www.youtube.com/embed/mpSex0uHMag" title="Pica Pau - 20 minutos" allowfullscreen></iframe>
+        <iframe width="300" height="170" src="https://www.youtube.com/embed/chC-aBpR2Dw" title="Por isso que eu amo ser brasileiro - t3ddy" allowfullscreen></iframe>
+      </div>
+    </section>
+
+ 
+
+    <footer>
+      <p> Maria Eduarda - Site Pessoal</p>
+    </footer>
+  </div>
+</body>
+</html>
